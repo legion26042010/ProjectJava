@@ -10,16 +10,16 @@ public class Battery {
         return "My charge: "+load+"%";
     }
     public void exchange(Battery another) {
-        this.load = this.load + another.load;
-        another.load = 0;
+        another.load = another.load + this.load;
+        this.load = 0;
     }
 
     public static void main(String[] args) {
-        Battery first = new Battery(70);
-        Battery second = new Battery(30);
+        Battery first = new Battery(30);
+        Battery second = new Battery(50);
         first.exchange(second);
-        System.out.println("First." + second.about());
-        System.out.println("Second." + first.about());
+        System.out.println("First." + first.about());
+        System.out.println("Second." + second.about());
 
     }
 }
