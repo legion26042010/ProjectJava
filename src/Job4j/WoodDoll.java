@@ -1,4 +1,5 @@
 package Job4j;
+
 public class WoodDoll {
     private WoodDoll result;
     private int number;
