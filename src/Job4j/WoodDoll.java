@@ -13,11 +13,11 @@ public class WoodDoll {
 
         System.out.println("Hello, my number is: " + number);
         if (result != null) {
-            System.out.println("Sum of numbers is: "+number);
+            System.out.println("You number is: "+number);
             sum+=number;
             result.about();
         } else {
-            System.out.println("Sum of numbers is null");
+            System.out.println("You number is null");
         }
     }
 
@@ -25,11 +25,12 @@ public class WoodDoll {
         System.out.println(sum);
     }
     public static void main(String[] args) {
-        WoodDoll little = new WoodDoll(null, 5);
-        WoodDoll middle = new WoodDoll(little, 1);
-        WoodDoll big = new WoodDoll(middle, 3);
-        big.about();
-        System.out.print("The som of number is: ");
+        WoodDoll num1 = new WoodDoll(null, 5);
+        WoodDoll num2 = new WoodDoll(num1, 1);
+        WoodDoll num3 = new WoodDoll(num2, 3);
+        num3.about();
+        System.out.println();
+        System.out.print("The sum of number is: ");
         SumOfNumber();
     }
 }
