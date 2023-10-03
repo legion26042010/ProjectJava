@@ -1,4 +1,4 @@
-package Job4j.GobertStild.Polimorfizm;
+package Job4j.GobertShild.Polimorfizm;
 
 public class animal {
     public void eat(){

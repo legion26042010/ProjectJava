@@ -1,4 +1,4 @@
-package Job4j.GobertStild;
+package Job4j.GobertShild;
 
 class Stack {
     int[] stack = new int[10];

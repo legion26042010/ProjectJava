@@ -1,4 +1,4 @@
-package Job4j.GobertStild.Incapsulatsia;
+package Job4j.GobertShild.Incapsulatsia;
 
 public class Incaps {
     public static void main(String[] args) {

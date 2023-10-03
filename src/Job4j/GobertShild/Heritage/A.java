@@ -1,4 +1,4 @@
-package Job4j.GobertStild.Heritage;
+package Job4j.GobertShild.Heritage;
 
 public class A {
     int i, j;

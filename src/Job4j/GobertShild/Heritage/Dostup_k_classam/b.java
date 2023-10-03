@@ -1,4 +1,4 @@
-package Job4j.GobertStild.Heritage.Dostup_k_classam;
+package Job4j.GobertShild.Heritage.Dostup_k_classam;
 
 public class b extends a{
     int total;
