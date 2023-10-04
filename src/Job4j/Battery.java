@@ -15,9 +15,9 @@ public class Battery {
     }
 
     public static void main(String[] args) {
-        Battery first = new Battery(30);
-        Battery second = new Battery(50);
-        first.exchange(second);
+        Battery first = new Battery(80);
+        Battery second = new Battery(20);
+        second.exchange(first);
         System.out.println("First." + first.about());
         System.out.println("Second." + second.about());
 
