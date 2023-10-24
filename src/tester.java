@@ -1,32 +1,31 @@
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
-class tester {
+public class tester {
     public static void main(String[] args) {
-//        Scanner scanner = new Scanner(System.in);
-//        int t = scanner.nextInt();
-//
-//        for (int i = 0; i < t; i++) {
-//            int n=scanner.nextInt();
-//            int k=scanner.nextInt();
-//            int[] arr=new int[n];
-//            for (int j=0;j<arr.length;j++){
-//                arr[i]=scanner.nextInt();
-//            }
-//            Arrays.sort(arr);
-//            int d=0, max=0;
+        Scanner scanner = new Scanner(System.in);
+        int t = scanner.nextInt();
 
-        }
-
-    public String zipZap(String str) {
-        String s="";
-        for (int i=0;i<str.length()-2;i++){
-            if (str.substring(i,i+1).equals("z") && str.substring(i+2,i+3).equals("p")) {
-                s+=str.substring(i,i+1)+str.substring(i+2,i+3);
-            }else {
-                s+=str.substring(i,i+1);
+        for (int i = 0; i < t; i++) {
+            int n = scanner.nextInt();
+            List<Integer> a = new ArrayList<>();
+            List<Integer> b = new ArrayList<>();
+            for (int j = 0; j < n; j++) {
+                a.add(scanner.nextInt());
+                b.add(scanner.nextInt());
             }
+            String s= b.toString().replace(", ","");
+            s=s.replace("[","").replace("]","");
+            int max=Integer.MIN_VALUE;
+            int res=0;
+            for (int j = 0; j < a.size(); j++) {
+                if (a.get(j) > 10) {
+                    a.remove(j);
+                    b.remove(j);
+                }
+                max= Math.max(max,b.get(j));
+            }
+            String Max= String.valueOf(max);
+            System.out.println(s.indexOf(Max)+1);
         }
-        return s;
     }
 }
