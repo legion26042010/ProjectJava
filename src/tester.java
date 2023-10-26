@@ -1,3 +1,5 @@
+import Job4j.GobertShild.Heritage.A;
+
 import java.util.*;
 
 public class tester {
@@ -6,12 +8,33 @@ public class tester {
         int t = scanner.nextInt();
         while (t-- > 0) {
             int n = scanner.nextInt();
-            String[] arr=new String[n];
-            for (int i = 0; i < n; i++) {
-                arr[i]=scanner.next();
+            int q = scanner.nextInt();
+            int[] arr = new int[n];
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = scanner.nextInt();
             }
-            String res = "";
-            System.out.println(Arrays.toString(arr));
+            int res=0;
+            for (int i = 0; i < arr.length; i++) {
+                int x = scanner.nextInt();
+                int y = scanner.nextInt();
+                if (x == 0) {
+                    for (int j = 0; j < arr.length; j++) {
+                        if (arr[j] % 2 == 0) {
+                            arr[j] = arr[j] + y;
+                        }
+                    }
+                } else {
+                    for (int j = 0; j < arr.length; j++) {
+                        if (arr[j] % 2 != 0) {
+                            arr[j] = arr[j] + y;
+                        }
+                    }
+                }
+                for (int j=0;j<arr.length;j++){
+                   res+=arr[j];
+                }
+                System.out.println(res);
+            }
         }
     }
 }
