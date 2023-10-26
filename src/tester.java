@@ -3,19 +3,15 @@ import java.util.*;
 public class tester {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int k=scanner.nextInt();
-        List<Integer> list=new ArrayList<>();
-        while (n-->0){
-            list.add(scanner.nextInt());
+        int t = scanner.nextInt();
+        while (t-- > 0) {
+            int n = scanner.nextInt();
+            String[] arr=new String[n];
+            for (int i = 0; i < n; i++) {
+                arr[i]=scanner.next();
+            }
+            String res = "";
+            System.out.println(Arrays.toString(arr));
         }
-        int max=Integer.MIN_VALUE;
-        Collections.sort(list);
-        List<Integer> arr=new ArrayList<>();
-        for (int i=0;i<k;i++){
-           arr.add(list.get(i));
-           max=Math.max(arr.get(i),max);
-        }
-        System.out.println(max+1);
     }
 }
