@@ -1,5 +1,3 @@
-import Job4j.GobertShild.Heritage.A;
-
 import java.util.*;
 
 public class tester {
@@ -28,4 +26,4 @@ public class tester {
         }
     }
 }
-//hell
+//hellпп
