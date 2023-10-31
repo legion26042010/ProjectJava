@@ -23,17 +23,7 @@ public class tester {
                             arr[j] = arr[j] + y;
                         }
                     }
-                } else {
-                    for (int j = 0; j < arr.length; j++) {
-                        if (arr[j] % 2 != 0) {
-                            arr[j] = arr[j] + y;
-                        }
-                    }
                 }
-                for (int j=0;j<arr.length;j++){
-                   res+=arr[j];
-                }
-                System.out.println(res);
             }
         }
     }
