@@ -1,22 +1,24 @@
-import java.util.*;
+package ACMP;
 
-public class tester {
+import java.util.Scanner;
+
+public class Sosedniye_kletki {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         if (n == 1) {
-            System.out.println(n+1);
-            System.out.println(n+8);
+            System.out.println(2);
+            System.out.println(9);
         } else if (n == 64) {
             System.out.println(n - 8);
             System.out.println(n - 1);
         } else if (n == 57) {
             System.out.println(n - 8);
             System.out.println(n + 1);
-        }else if (n==8){
-            System.out.println(n-1);
-            System.out.println(n+8);
-        }else if (n == 2 || n == 3 || n == 4 || n == 5 || n == 6 || n == 7) {
+        } else if (n == 8) {
+            System.out.println(n - 1);
+            System.out.println(n + 8);
+        } else if (n == 2 || n == 3 || n == 4 || n == 5 || n == 6 || n == 7) {
             System.out.println(n - 1);
             System.out.println(n + 1);
             System.out.println(n + 8);
